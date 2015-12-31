@@ -20,7 +20,7 @@ func main() {
 	now := time.Now()
 	secs := now.Unix()
 	rand.Seed(secs)
-	fmt.Println("dude!")
+	defer fmt.Println("dude!")
 	Shownum()
 }
 
